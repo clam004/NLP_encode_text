@@ -18,6 +18,7 @@ from torch import optim
 import torch.nn.functional as F
 from torch.nn.utils.rnn import pad_packed_sequence, pack_padded_sequence
 
+# check if this computer has gpus 
 use_cuda = torch.cuda.is_available()
 
 def indexesFromSentence(sentence):
